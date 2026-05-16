@@ -22,11 +22,7 @@
 –muted: #7A7060;
 }
 
-html {
-scroll-behavior: smooth;
-color-scheme: only light;
-background-color: #F5F0EA;
-}
+html { scroll-behavior: smooth; color-scheme: only light; background-color: #F5F0EA; }
 
 body {
 background-color: #F5F0EA !important;
@@ -50,7 +46,6 @@ z-index: 100;
 .palette { display: flex; height: 5px; width: 100%; position: fixed; top: 0; left: 0; z-index: 200; }
 .palette span { flex: 1; }
 
-/* COVER */
 .cover {
 min-height: 100vh;
 display: flex;
@@ -73,27 +68,15 @@ overflow: hidden;
 .tag { font-size: 9px; letter-spacing: 5px; text-transform: uppercase; color: #E8A87C; margin-bottom: 36px; }
 
 .ornament { display: flex; align-items: center; justify-content: center; gap: 14px; margin-bottom: 36px; }
-.ornament-line { width: 50px; height: 1px; background: linear-gradient(90deg, transparent, var(–terracotta)); }
-.ornament-line.r { background: linear-gradient(90deg, var(–terracotta), transparent); }
-.ornament-dot { width: 5px; height: 5px; background: var(–terracotta); transform: rotate(45deg); }
+.ornament-line { width: 50px; height: 1px; background: linear-gradient(90deg, transparent, #C47A45); }
+.ornament-line.r { background: linear-gradient(90deg, #C47A45, transparent); }
+.ornament-dot { width: 5px; height: 5px; background: #C47A45; transform: rotate(45deg); }
 
-.cover h1 {
-font-family: ‘Cormorant Garamond’, serif;
-font-weight: 300;
-font-size: clamp(56px, 11vw, 100px);
-line-height: 0.9;
-color: #2E2A24;
-letter-spacing: -1px;
-}
+.cover h1 { font-family: ‘Cormorant Garamond’, serif; font-weight: 300; font-size: clamp(56px, 11vw, 100px); line-height: 0.9; color: #2E2A24; letter-spacing: -1px; }
 .cover h1 em { font-style: italic; color: #C47A45; }
-
 .cover-sub { margin-top: 28px; font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: #4A4820; }
 
-.cover-scroll {
-position: absolute; bottom: 36px; left: 0; right: 0;
-display: flex; flex-direction: column; align-items: center; gap: 10px;
-animation: fadeUp 1.4s 0.4s ease both;
-}
+.cover-scroll { position: absolute; bottom: 36px; left: 0; right: 0; display: flex; flex-direction: column; align-items: center; gap: 10px; animation: fadeUp 1.4s 0.4s ease both; }
 .scroll-bar { width: 1px; height: 44px; background: linear-gradient(180deg, #C47A45, transparent); animation: pulse 2.2s ease-in-out infinite; }
 .cover-scroll span { font-size: 8px; letter-spacing: 3px; text-transform: uppercase; color: #A8B5A2; }
 
@@ -101,108 +84,46 @@ animation: fadeUp 1.4s 0.4s ease both;
 
 section { padding: 90px 40px; max-width: 860px; margin: 0 auto; background-color: #F5F0EA !important; }
 
-.section-label {
-font-size: 9px; letter-spacing: 4px; text-transform: uppercase;
-color: #6B6840 !important; margin-bottom: 44px;
-display: flex; align-items: center; gap: 16px;
-}
+.section-label { font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #6B6840 !important; margin-bottom: 44px; display: flex; align-items: center; gap: 16px; }
 .section-label::after { content: ‘’; width: 80px; height: 1px; background: linear-gradient(90deg, #A8B5A2, transparent); }
 
 .sobre-text { font-family: ‘Cormorant Garamond’, serif; font-weight: 300; font-size: clamp(22px, 4vw, 30px); line-height: 1.6; color: #2E2A24 !important; }
 .sobre-text em { font-style: italic; color: #C47A45 !important; }
-
 .sobre-detail { margin-top: 40px; padding-top: 36px; border-top: 1px solid #A8B5A2; font-size: 13px; line-height: 1.9; color: #5A5248 !important; }
 
 .como-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: #A8B5A2; border: 1px solid #A8B5A2; margin-top: 8px; }
-
 .como-item { background: #F5F0EA !important; padding: 40px 36px; position: relative; overflow: hidden; transition: background 0.35s ease; }
 .como-item:hover { background: #EDE5D8 !important; }
-
-.como-item::before {
-content: attr(data-num); position: absolute; top: 16px; right: 20px;
-font-family: ‘Cormorant Garamond’, serif; font-size: 52px; font-weight: 300;
-color: #A8B5A2; opacity: 0.5; line-height: 1;
-}
+.como-item::before { content: attr(data-num); position: absolute; top: 16px; right: 20px; font-family: ‘Cormorant Garamond’, serif; font-size: 52px; font-weight: 300; color: #A8B5A2; opacity: 0.5; line-height: 1; }
 .como-item h3 { font-family: ‘Cormorant Garamond’, serif; font-size: 19px; font-weight: 400; color: #2E2A24 !important; margin-bottom: 12px; }
 .como-item p { font-size: 12px; line-height: 1.85; color: #5A5248 !important; }
 
 .servicos-wrapper { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; margin-top: 8px; }
-
-.servico-grupo-title {
-font-family: ‘Cormorant Garamond’, serif; font-style: italic; font-size: 20px;
-color: #6B6840 !important; margin-bottom: 24px; padding-bottom: 14px;
-border-bottom: 1px solid #A8B5A2;
-}
-
+.servico-grupo-title { font-family: ‘Cormorant Garamond’, serif; font-style: italic; font-size: 20px; color: #6B6840 !important; margin-bottom: 24px; padding-bottom: 14px; border-bottom: 1px solid #A8B5A2; }
 .servico-list { list-style: none; display: flex; flex-direction: column; gap: 20px; }
 .servico-list li { font-size: 12.5px; line-height: 1.6; color: #2E2A24 !important; display: flex; align-items: flex-start; gap: 12px; }
 .servico-list li::before { content: ‘’; width: 4px; height: 4px; min-width: 4px; background: #C47A45; transform: rotate(45deg); margin-top: 6px; }
 
-.parceria-nome {
-font-family: ‘Cormorant Garamond’, serif; font-size: 14px; font-weight: 500;
-color: #C47A45 !important; display: block; margin-bottom: 4px; letter-spacing: 0.3px;
-}
+.parceria-nome { font-family: ‘Cormorant Garamond’, serif; font-size: 14px; font-weight: 500; color: #C47A45 !important; display: block; margin-bottom: 4px; letter-spacing: 0.3px; }
 .parceria-desc { font-size: 12px; line-height: 1.65; color: #5A5248 !important; }
 
 .para-quem-text { font-family: ‘Cormorant Garamond’, serif; font-weight: 300; font-size: clamp(20px, 3.5vw, 28px); line-height: 1.65; color: #2E2A24 !important; margin-top: 8px; }
 .para-quem-text em { font-style: italic; color: #C47A45 !important; }
 
 footer { background: #E0D5C5 !important; padding: 80px 40px; text-align: center; position: relative; overflow: hidden; }
-.footer-logo { text-align: center; width: 100%; }
 footer::before { content: ‘’; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 160px; height: 1px; background: linear-gradient(90deg, transparent, #C47A45, transparent); }
-
 .footer-logo { font-family: ‘Cormorant Garamond’, serif; font-weight: 300; font-size: clamp(28px, 8vw, 38px); color: #1E1A14; letter-spacing: 2px; margin-bottom: 6px; text-align: center; }
 .footer-logo em { color: #A85E2A; font-style: italic; }
-
 .footer-tag { font-size: 9px; letter-spacing: 4px; text-transform: uppercase; color: #4A4820; margin-bottom: 32px; }
-
 .footer-contacts { display: flex; flex-direction: column; gap: 8px; align-items: center; }
 .footer-contacts a, .footer-contacts p { font-size: 11px; letter-spacing: 1.5px; color: #4A4438; text-decoration: none; transition: color 0.2s; }
 .footer-contacts a:hover { color: #A85E2A; }
 
-/* SCROLL REVEAL (only screen) */
 .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease, transform 0.8s ease; }
 .reveal.visible { opacity: 1; transform: translateY(0); }
 
 @keyframes fadeUp { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
 @keyframes pulse { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
-
-/* ===================== PRINT STYLES ===================== */
-@media print {
-@page { size: A4; margin: 0; }
-
-```
-* { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
-
-body::before { display: none; }
-
-/* Mostra tudo, sem animação */
-.reveal { opacity: 1 !important; transform: none !important; }
-
-/* Cover vira página inteira */
-.cover {
-  min-height: 100vh;
-  page-break-after: always;
-  background: linear-gradient(150deg, #F5F0EA 0%, #EDE5D8 50%, #E0D5C5 100%) !important;
-}
-
-.cover-inner { animation: none !important; }
-.cover-scroll { display: none; }
-
-/* Seções não quebram no meio */
-section { page-break-inside: avoid; }
-.como-grid { page-break-inside: avoid; }
-.servicos-wrapper { page-break-inside: avoid; }
-
-/* Fundo nas seções */
-.como-item { background: #F5F0EA !important; }
-footer { background: #E0D5C5 !important; }
-
-/* Palette bar */
-.palette { display: flex !important; }
-```
-
-}
 
 @media (max-width: 700px) {
 section { padding: 64px 24px; }
@@ -342,7 +263,7 @@ footer { padding: 60px 24px; }
     Uma marca forte não acontece por acaso. Ela é construída com <em>intenção — toda semana.</em>
   </p>
   <p class="sobre-detail">
-    Oferecemos estruturas de produção que se adaptam ao momento da sua marca, sempre com roteirização, direção criativa e edição inclusos.
+    Oferecemos estruturas de produção que se adaptam ao momento da sua marca. Cada diária inclui <strong style="color:#2E2A24; font-weight:400;">4 horas de captação</strong>, roteirização, direção criativa e edição.
   </p>
 
   <div style="margin-top: 48px; display: flex; flex-direction: column; gap: 1px; background: #A8B5A2; border: 1px solid #A8B5A2;">
@@ -358,7 +279,7 @@ footer { padding: 60px 24px; }
     </div>
     <div style="background:#F5F0EA; padding:32px 36px;">
       <h3 style="font-family:'Cormorant Garamond',serif; font-size:19px; font-weight:400; color:#2E2A24; margin-bottom:10px;">Plano Semanal</h3>
-      <p style="font-family:'Cormorant Garamond',serif; font-size:26px; color:#C47A45; margin-bottom:10px;">R$ 720 <span style="font-size:13px; color:#7A7060;">/ diária</span></p>
+      <p style="font-family:'Cormorant Garamond',serif; font-size:26px; color:#C47A45; margin-bottom:10px;">R$ 690 <span style="font-size:13px; color:#7A7060;">/ diária</span></p>
       <p style="font-size:12px; line-height:1.85; color:#5A5248;">Para marcas que entendem que autoridade se constrói com frequência. O formato de quem quer liderar o próprio mercado.</p>
     </div>
   </div>
